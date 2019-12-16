@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- 引入文件 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shopCar.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/shopCar.js"></script>
+    <script src="js/remodal.js"></script>
+</head>
+
+<body>
+    <!-- 登录框 -->
+    <div class="login">
+        <!-- 版心 -->
+        <div class="wrapper clearfix fonte6">
+            <!-- 左边文字 -->
+            <span class="fl">legochina.cn</span>
+            <!-- 右边文字 -->
+            <span class="fr">
+                欢迎光临
+                <a class="fontf60" href="index.html">乐购</a>
+                ，请
+                <a class="fonte6" href="login.html">登陆</a>
+                \
+                <a class="fontf60" href="#">注册</a>
+            </span>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="searchBar">
+        <!-- 版心 -->
+        <div class="wrapper clearfix marginT">
+            <!-- 搜索框和按钮 -->
+            <div class="barLeft fr clearfix">
+                <input class="fl" type="text" placeholder="创意文具">
+                <button class="bgColorf60 fr"></button>
+            </div>
+            <div class="delivery fr">
+                <span>配送至</span>
+                <select name="" id="">
+                    <option value="成都">成都高新区三环内</option>
+                    <option value="成都">成都高新区三环内</option>
+                    <option value="成都">成都高新区三环内</option>
+                    <option value="成都">成都高新区三环内</option>
+                    <option value="成都">成都高新区三环内</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- logo和导航 -->
+    <div class="logoNav">
+        <!-- 版心 -->
+        <div class="wrapper clearfix">
+            <!-- logo -->
+            <img src="images/04-gouwu_02.jpg" alt="">
+        </div>
+    </div>
+    <!-- title -->
+    <div id="Cartitle" class="wrapper marginT20">
+        <p class="font16 marginT40">填写并核对订单信息</p>
+        <!-- mainTitle -->
+        <div class="outBox">
+            <!-- titleList -->
+            <ul class="titleList clearfix font18 font80">
+                <li class="box1">
+                    <input class="checkAll" type="checkbox" checked>
+                    <span>全选</span>
+                </li>
+                <li class="box2">商品</li>
+                <li class="box3">单价</li>
+                <li class="box4">数量</li>
+                <li class="box5">小计</li>
+                <li class="box6">操作</li>
+            </ul>
+        </div>
+    </div>
+    <!-- list -->
+    <div id="carList" class="wrapper marginT20">
+        <div class="inBox">
+            <!-- 单元格 -->
+            <ul class="Lists clearfix font18 font80">
+                <li class="box1">
+                    <input class="checkSingle" type="checkbox" checked>
+                </li>
+                <li class="box2 clearfix">
+                    <img class="fl" src="images/index08_05.jpg" alt="">
+                    <span class="font16 fl">从你的全世界路过</span>
+                </li>
+                <li class="box31 center">41.39</li>
+                <li class="box41 center">
+                    <ul class="numberBar clearfix">
+                        <li>-</li>
+                        <li>
+                            <input class="num" type="text" value="1">
+                        </li>
+                        <li>+</li>
+                    </ul>
+                </li>
+                <li class="box51 center">41.39</li>
+                <li class="box61 center font16">
+                    <p>删除</p>
+                    <p>移到我的关注</p>
+                </li>
+            </ul>
+            <ul class="Lists clearfix font18 font80">
+                <li class="box1">
+                    <input class="checkSingle" type="checkbox" checked>
+                </li>
+                <li class="box2 clearfix">
+                    <img class="fl" src="images/index08_05.jpg" alt="">
+                    <span class="font16 fl">从你的全世界路过</span>
+                </li>
+                <li class="box31 center">1.33</li>
+                <li class="box41 center">
+                    <ul class="numberBar clearfix">
+                        <li>-</li>
+                        <li>
+                            <input class="num" type="text" value="1">
+                        </li>
+                        <li>+</li>
+                    </ul>
+                </li>
+                <li class="box51 center">1.33</li>
+                <li class="box61 center font16">
+                    <p>删除</p>
+                    <p>移到我的关注</p>
+                </li>
+            </ul>
+            <ul class="Lists clearfix font18 font80">
+                <li class="box1">
+                    <input class="checkSingle" type="checkbox" checked>
+                </li>
+                <li class="box2 clearfix">
+                    <img class="fl" src="images/index08_05.jpg" alt="">
+                    <span class="font16 fl">从你的全世界路过</span>
+                </li>
+                <li class="box31 center">99.00</li>
+                <li class="box41 center">
+                    <ul class="numberBar clearfix">
+                        <li>-</li>
+                        <li>
+                            <input class="num" type="text" value="1">
+                        </li>
+                        <li>+</li>
+                    </ul>
+                </li>
+                <li class="box51 center">99.00</li>
+                <li class="box61 center font16">
+                    <p>删除</p>
+                    <p>移到我的关注</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 总计 -->
+    <div id="allCount" class="wrapper margin40 clearfix">
+        <!-- 左部内容 -->
+        <div class="leftContent fl clearfix">
+            <!-- 左边内容 -->
+            <div class="contentLeft font16 fl">
+                <span>
+                    <input class="checkAll" type="checkbox" checked>
+                    <span>全选</span>
+                </span>
+                <span>删除选中商品</span>
+            </div>
+            <!-- 右边内容 -->
+            <div class="contentRight fr">
+                <span>
+                    已选择
+                    <span class="fontf60 font20 allNum">1</span>
+                    件商品
+                </span>
+                <span class="font20">
+                    总价
+                    <span class="fontf60 allCount">99.11</span>
+                </span>
+            </div>
+        </div>
+        <!-- 右部按钮 -->
+        <a href="#modal">
+             <button class="fl">去结算</button>
+        </a>
+    </div>
+
+    <!-- 蒙层模板 -->
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+        <div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title"
+            aria-describedby="modal1Desc" tabindex="-1">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <div>
+                <h2 id="modal1Title">结账</h2>
+                <p id="modal1Desc">
+                    确认结账
+                </p>
+            </div>
+            <br>
+            <button data-remodal-action="cancel" class="remodal-cancel">确定</button>
+            <button data-remodal-action="confirm" class="remodal-confirm">取消</button>
+        </div>
+    </div>
+    <div id="bookDiscount" class="bookDiscount wrapper marginT40">
+        <p class="font24 bgColorf60 fontff">猜你喜欢</p>
+        <div class="discount clearfix">
+            <div class="bookPics fl">
+                <div class="bookPic">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#" class="font32">白夜行 东野上吾</a>
+                </p>
+                <div class="recommend clearfix">
+                    <span class="fontf42">推荐：</span>
+                    <div class="fl"></div>
+                </div>
+                <p class="bookPrice fontf42 font24">￥:38
+                    <span>￥:58</span>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPic">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#" class="font32">白夜行 东野上吾</a>
+                </p>
+                <div class="recommend clearfix">
+                    <span class="fontf42">推荐：</span>
+                    <div class="fl"></div>
+                </div>
+                <p class="bookPrice fontf42 font24">￥:38
+                    <span>￥:58</span>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPic">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#" class="font32">白夜行 东野上吾</a>
+                </p>
+                <div class="recommend clearfix">
+                    <span class="fontf42">推荐：</span>
+                    <div class="fl"></div>
+                </div>
+                <p class="bookPrice fontf42 font24">￥:38
+                    <span>￥:58</span>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPic">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#" class="font32">白夜行 东野上吾</a>
+                </p>
+                <div class="recommend clearfix">
+                    <span class="fontf42">推荐：</span>
+                    <div class="fl"></div>
+                </div>
+                <p class="bookPrice fontf42 font24">￥:38
+                    <span>￥:58</span>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPic">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#" class="font32">白夜行 东野上吾</a>
+                </p>
+                <div class="recommend clearfix">
+                    <span class="fontf42">推荐：</span>
+                    <div class="fl"></div>
+                </div>
+                <p class="bookPrice fontf42 font24">￥:38
+                    <span>￥:58</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部广告图 -->
+    <div class="bottomPic wrapper">
+        <img src="images/02-list-moshou_06.jpg" alt="">
+    </div>
+    <!-- 页脚 -->
+    <div class="footer" class="marginT40">
+        <div class="footTop">
+            <div class="wrapper clearfix">
+                <div class="footPic clearfix">
+                    <img src="images/222_11.png" alt="">
+                    <img src="images/222_13(1).png" alt="">
+                    <img src="images/222_15.png" alt="">
+                    <img src="images/222_17.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footMid clearfix">
+                <div class="footLink">
+                    <p>
+                        购物指南
+                    </p>
+                    <p>
+                        <a href="">购物流程</a>
+                    </p>
+                    <p>
+                        <a href="">发票制度</a>
+                    </p>
+                    <p>
+                        <a href="">账户管理</a>
+                    </p>
+                    <p>
+                        <a href="">
+                            会员优惠</a>
+                    </p>
+                </div>
+                <div class="footLink">
+                    <p>支付方式</p>
+                    <p>
+                        <a href="">货到付款</a>
+                    </p>
+                    <p>
+                        <a href="">网上支付</a>
+                    </p>
+                    <p>
+                        <a href="">礼品卡支付</a>
+                    </p>
+                    <p>
+                        <a href="">
+                            银行转帐</a>
+                    </p>
+                </div>
+                <div class="footLink">
+                    <p>订单服务</p>
+                    <p>
+                        <a href="">订单配送查询</a>
+                    </p>
+                    <p>
+                        <a href="">订单状态说明</a>
+                    </p>
+                    <p>
+                        <a href="">自助取消订单</a>
+                    </p>
+                    <p>
+                        <a href="">自助修改订单</a>
+                    </p>
+                </div>
+                <div class="footLink">
+                    <p>退换货</p>
+                    <p>
+                        <a href="">退换货政策</a>
+                    </p>
+                    <p>
+                        <a href="">自助申请退换货</a>
+                    </p>
+                    <p>
+                        <a href="">退换货进度查询</a>
+                    </p>
+                    <p>
+                        <a href="">
+                            退款方式和时间</a>
+                    </p>
+                </div>
+                <div class="footLink">
+                    <p>商家服务</p>
+                    <p>
+                        <a href="">商家中心</a>
+                    </p>
+                    <p>
+                        <a href="">运营服务</a>
+                    </p>
+                    <p>
+                        <a href="">
+                            加入尾品汇</a>
+                    </p>
+                </div>
+                <div class="footLink">
+                    <img src="images/logo_00.png" alt="">
+                </div>
+            </div>
+            <div class="footOther">
+                <a href="">公司简介 </a> |
+                <a href="">Investor Relations</a> |
+                <a href="">网站联盟</a> |
+                <a href="">乐购招商 </a> |
+                <a href="">机构销售 </a> |
+                <a href="">手机乐购 </a> |
+                <a href="">官方Blog </a> |
+                <a href="">热词搜索</a>
+            </div>
+            <p class="footCopy">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
